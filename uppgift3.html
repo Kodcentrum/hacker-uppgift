@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Hackeruppgiften - Nivå 3</title>
+  </head>
+  <body>
+    <center>
+      <h1>Nivå 3 - Dolda lösenord</h1><br>
+      <p>Tips: Ibland måste man leta efter saker som man inte kan se med blotta ögat.</p><br><br>
+      <p style="color: white">Lösenordet är Ada Lovelace</p><br><br>
+      <label for="password">Lösenord:</label><br>
+      <input type="password" id="password"><br><br>
+      <button id="next">Nästa</button>
+    </center>
+    <script>
+      document.getElementById("next").addEventListener("click", function() {
+        if(document.getElementById("password").value === "Ada Lovelace") {
+          window.location.href="/uppgift4.html";
+        } else {
+          alert("Lösenordet är fel, försök igen!");
+        }
+      });
+    </script>
+  </body>
+</html>

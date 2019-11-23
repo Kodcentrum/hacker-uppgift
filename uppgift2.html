@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Hackeruppgiften - Nivå 2</title>
+  </head>
+  <body>
+    <center>
+      <h1>Nivå 2 - Gustav Vasa</h1><br>
+      <p>Tips: Året då Gustav Vasa kröntes till kung av Sverige</p>
+      <label for="password">Lösenord:</label><br>
+      <input type="password" id="password"><br><br>
+      <button id="next">Nästa</button>
+    </center>
+    <script>
+      document.getElementById("next").addEventListener("click", function() {
+        if(document.getElementById("password").value === "1524") {
+          window.location.href="/uppgift3.html";
+        } else {
+          alert("Lösenordet är fel, försök igen!");
+        }
+      });
+    </script>
+  </body>
+</html>

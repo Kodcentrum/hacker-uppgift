@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Hackeruppgiften - Nivå 4</title>
+  </head>
+  <body>
+    <center>
+      <h1>Nivå 4 - Kolla koden</h1><br>
+      <p>Tips: Ibland måste man gå till källan (source) för att lösa problem</p>
+      <label for="password">Lösenord:</label><br>
+      <input type="password" id="password"><br><br>
+      <button id="next">Nästa</button>
+    </center>
+    <script>
+      document.getElementById("next").addEventListener("click", function() {
+        if(document.getElementById("password").value === "passWord123") {
+          window.location.href="/uppgift5.html";
+        } else {
+          alert("Lösenordet är fel, försök igen!");
+        }
+      });
+    </script>
+  </body>
+</html>

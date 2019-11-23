@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Hackeruppgiften - Nivå 5</title>
+  </head>
+  <body>
+    <center>
+      <h1>Nivå 5 - Kolla koden</h1><br>
+      <p>Tips: Ibland måste man gå till källan (source) för att lösa problem</p>
+      <label for="password">Lösenord:</label><br>
+      <input type="password" id="password" name="color"><br><br>
+      <button id="next">Nästa</button>
+    </center>
+    <script>
+      document.getElementById("next").addEventListener("click", function() {
+        if(document.getElementById("password").value === document.getElementById("password").name) {
+          window.location.href="/finalPassword5219.html";
+        } else {
+          alert("Lösenordet är fel, försök igen!");
+        }
+      });
+    </script>
+  </body>
+</html>
